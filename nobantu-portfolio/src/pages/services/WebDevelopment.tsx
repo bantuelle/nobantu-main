@@ -98,14 +98,6 @@ const WebDevelopment = () => {
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 Every project is built with modern technologies, ensuring speed, security, and scalability. I offer flexible packages to match your budget and timeline.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button variant="hero" size="lg" asChild>
-                  <a href="#packages">View Packages</a>
-                </Button>
-                <Button variant="hero-outline" size="lg" asChild>
-                  <Link to="/#contact">Get a Quote</Link>
-                </Button>
-              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
