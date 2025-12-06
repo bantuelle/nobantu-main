@@ -18,6 +18,7 @@ const services = [
     icon: Palette,
     title: "UI/UX Design",
     description: "User-centered designs that balance aesthetics with intuitive functionality.",
+    link: "/services/ui-ux-design",
   },
   {
     icon: Zap,
