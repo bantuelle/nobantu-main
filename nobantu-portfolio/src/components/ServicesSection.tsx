@@ -54,27 +54,46 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className="group card-gradient rounded-2xl p-8 border border-border hover:border-primary/30 transition-all duration-300"
-            >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-display font-semibold text-foreground mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground font-body leading-relaxed">
-                {service.description}
-              </p>
-            </motion.div>
-          ))}
+          {services.map((service, index) => {
+            const CardContent = (
+              <>
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                  <service.icon className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground font-body leading-relaxed">
+                  {service.description}
+                </p>
+                {service.link && (
+                  <span className="inline-block mt-4 text-primary text-sm font-medium group-hover:underline">
+                    Learn more →
+                  </span>
+                )}
+              </>
+            );
+
+            return (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="group card-gradient rounded-2xl p-8 border border-border hover:border-primary/30 transition-all duration-300"
+              >
+                {service.link ? (
+                  <Link to={service.link} className="block">
+                    {CardContent}
+                  </Link>
+                ) : (
+                  CardContent
+                )}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
