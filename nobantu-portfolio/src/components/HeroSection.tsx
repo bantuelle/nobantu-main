@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Code2, Palette, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import avatarImage from "@/assets/nobantu-portfolio/src/assets/IMG_6202.png";
+import avatarImage from "@/assets/avatar.png";
 
 const HeroSection = () => {
   return (
