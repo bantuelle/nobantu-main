@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import { Monitor, Smartphone, ShoppingCart, Palette, Zap, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Monitor,
     title: "Web Development",
     description: "Building responsive, performant websites with modern frameworks and best practices.",
+    link: "/services/web-development",
   },
   {
     icon: ShoppingCart,
