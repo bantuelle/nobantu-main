@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const techStack = [
-  "React", "TypeScript", "JavaScript", "C#", ".NET", "Node.js", "Azure", "SQL", "Tailwind CSS", "Figma"
+  "Blazor", "React", "Bootstrap", "TypeScript", "JavaScript", "C#", ".NET", "Node.js", "Azure", "SQL", "Tailwind CSS", "REST APIs", "SDLC", "SEO Optimization", "API Testing", "Figma"
 ];
 
 const AboutSection = () => {
