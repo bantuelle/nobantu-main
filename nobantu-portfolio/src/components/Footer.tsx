@@ -25,10 +25,25 @@ const Footer = () => {
           </motion.a>
 
           {/* Copyright */}
-          <p className="text-muted-foreground font-body text-sm text-center">
-            © {currentYear} Nobantu. Crafted with passion.
-          </p>
-
+            <div className="space-y-3">
+              <p className="text-muted-foreground font-body text-sm leading-relaxed">
+                Designed in <span className="text-foreground">Figma</span>, coded in{" "}
+                <span className="text-foreground">VS Code</span>, by yours truly. 
+                Built with{" "} <span className="text-foreground">React</span>,{" "}
+                <span className="text-foreground">TypeScript</span>,{" "}
+                <span className="text-foreground">Tailwind CSS</span> &{" "}
+                <span className="text-foreground">Framer Motion</span>, and deployed on{" "}
+                <span className="text-foreground">Vercel</span>.
+              </p>
+              <p className="text-muted-foreground/70 font-body text-xs">
+                Font used is <span className="text-muted-foreground">Playfair Display</span> &{" "}
+                <span className="text-muted-foreground">Sora</span>.
+              </p>
+              <p className="text-muted-foreground/50 font-body text-xs">
+                © {new Date().getFullYear()} Nobantu
+              </p>
+            </div>
+          
           {/* Social Links */}
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
