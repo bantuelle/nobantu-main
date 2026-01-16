@@ -29,12 +29,12 @@ const projects = [
     link: "https://carmaxx.co.za/",
   },
   {
-    title: "E-Commerce Fashion Store",
+    title: "Hii Movie Store",
     category: "eCommerce",
     description: "Full-featured online store with secure payments and real-time inventory management.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=800&h=600&fit=crop",
     tags: ["Next.js", "Stripe", "React", "MongoDB"],
-    link: "#",
+    link: "https://himovie-hazel.vercel.app/",
   },
 ];
 
