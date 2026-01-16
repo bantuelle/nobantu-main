@@ -36,6 +36,14 @@ const projects = [
     tags: ["Next.js", "Stripe", "React", "MongoDB"],
     link: "https://himovie-hazel.vercel.app/",
   },
+  {
+    title: "Palbot",
+    category: "SaaS Platform",
+    description: "An AI Customer Service platform for all businesses",
+    image: "https://images.unsplash.com/photo-1684369175809-f9642140a1bd?w=800&h=600&fit=crop",
+    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "OpenAI API", "Twilio", "Supabase"],
+    link: "https://palbot.co.za/",
+  },
 ];
 
 const ProjectsSection = () => {
