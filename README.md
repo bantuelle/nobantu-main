@@ -129,7 +129,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 👤 Author
 
 **Nobantu**
-- Website: [nobantu.dev](https://nobantu.dev)
+- Website: [nobantu.dev](https://nobantundlovu.co.za)
 - Twitter: [@nobantu](https://twitter.com/nobantu)
 
 ## ⭐ Show Your Support
