@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import cleanbooksImage from "@/assets/IMG_0056.jpeg";
 import linkpadImage from "@/assets/IMG_0057.jpeg";
+import carmaxxImage from "@/assets/IMG_0058.png";
+import palbotImage from "@/assets/IMG_0059.png";
 
 const projects = [
   {
@@ -26,7 +28,7 @@ const projects = [
     title: "Carmaxx",
     category: "Marketplace",
     description: "A digital car marketplace where people can browse, buy, and sell vehicles quickly and safely. Features verified sellers, quality listings, and a mobile-first shopping experience.",
-    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop",
+    image: carmaxxImage,
     tags: ["Next.js", "React", "Tailwind CSS", "Shadcn UI"],
     link: "https://carmaxx.co.za/",
   },
