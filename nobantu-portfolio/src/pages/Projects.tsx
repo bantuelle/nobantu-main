@@ -3,6 +3,7 @@ import { ExternalLink, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import cleanbooksImage from "@/assets/IMG_0056.jpeg";
+import linkpadImage from "@/assets/IMG_0057.jpeg";
 
 const projects = [
   {
@@ -17,7 +18,7 @@ const projects = [
     title: "LinkPad",
     category: "Web Application",
     description: "Create a clean, modern digital CV and portfolio, all packaged into one shareable link. Perfect for professionals looking to showcase their work and connect with opportunities.",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop",
+    image: linkpadImage,
     tags: ["React", "Tailwind CSS", "Shadcn UI", "Supabase"],
     link: "https://linkpad.africa",
   },
