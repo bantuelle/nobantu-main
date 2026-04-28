@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import cleanbooksImage from "@/assets/IMG_0056.jpeg";
 
 const projects = [
   {
     title: "Cleanbooks",
     category: "SaaS Platform",
     description: "A powerful accounting software that simplifies financial management for businesses of all sizes.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
+    image: cleanbooksImage,
     tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "Supabase"],
     link: "https://cleanbooks.co.za/",
   },
