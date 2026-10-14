@@ -3,19 +3,27 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    period: "2025 — Present",
+    period: "Oct 2026 — Present",
+    role: "Engineer",
+    company: "Nintex",
+    description: "Promoted to Engineer, contributing to the development and continuous improvement of enterprise workflow and process automation products. Working across frontend and backend systems, including React-based microfrontends, .NET services, APIs, and cloud integrations. Contributing to feature development, production troubleshooting, technical debt reduction, and software quality through automated testing and continuous improvement. Exploring AI-driven engineering workflows while collaborating with engineering, QA, and product teams to deliver reliable, maintainable software.",
+    technologies: ["JavaScript", "TypeScript", "React", "Microfrontends", "C#", ".NET", "ASP.NET", "EF", "NodeJS", "Azure DevOps", "Azure CloudOps", "KQL", "SQL", "Github", "NUnit"],
+    current: true,
+  },
+  {
+    period: "2025 — Oct 2026",
     role: "Associate Engineer",
     company: "Nintex",
-    description: "Contributing to the development, testing, and maintenance of workflow and automation products. I collaborate with engineers, QA, and product teams to deliver stable features, resolve defects, and support continuous improvements across the codebase. My work touches frontend components, backend services, and cloud-based integrations, giving me a strong foundation in real-world engineering practices.",
-    technologies: ["JavaScript", "TypeScript", "React", "C#", ".NET", "ASP.NET", "EF", "NodeJS", "Azure", "SQL", "NUnit"],
-    current: true,
+    description: "Contributed to the development, testing, maintenance, and support of enterprise workflow and process automation products. Worked across React-based microfrontends, backend services, APIs, databases, and cloud-based integrations. Collaborated with engineering, QA, and product teams to deliver features, resolve defects, investigate production issues using Azure Application Insights and KQL, and improve application reliability and maintainability. Gained hands-on experience with cloud operations, troubleshooting, automated testing, and enterprise software development practices.",
+    technologies: ["JavaScript", "TypeScript", "React", "Microfrontends", "C#", ".NET", "ASP.NET", "EF", "NodeJS", "Azure DevOps", "Azure CloudOps", "KQL", "SQL", "Github", "NUnit"],
+    current: false,
   },
   {
     period: "2023 — 2025",
     role: "Junior Developer",
     company: "Fruit South Africa (eCert South Africa)",
     description: "Contributed to a variety of development projects, building efficient, scalable, and maintainable web applications. Refactored legacy systems, developed new features, optimized performance, and resolved bugs to ensure smooth functionality. Adapted quickly to changing requirements and collaborated closely with cross-functional teams to deliver high-quality solutions.",
-    technologies: ["C#", "SQL", "Blazor", "Telerik Kendo", "Bootstrap", "REST API", "Azure"],
+    technologies: ["C#", "SQL", "Blazor", "Telerik Kendo", "Bootstrap", "API Design"],
     current: false,
   },
 ];
