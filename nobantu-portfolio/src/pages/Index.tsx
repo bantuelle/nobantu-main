@@ -2,38 +2,52 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Link2, ExternalLink } from "lucide-react";
 import avatarImage from "@/assets/avatar.png";
 import AIChatbot from "@/components/AIChatbot";
-
+ 
 const projects = [
   {
-    title: "cleanbooks.co.za",
-    category: "SAAS",
+    title: "Cleanbooks",
+    category: "SaaS Platform",
     description: "A powerful accounting software that simplifies financial management for businesses of all sizes.",
+    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "Supabase"],
     link: "https://cleanbooks.co.za/",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
-    title: "linkpad.africa",
-    category: "WEB APP",
+    title: "LinkPad",
+    category: "Web Application",
     description: "Create a clean, modern digital CV and portfolio, all packaged into one shareable link.",
+    tags: ["React", "Tailwind CSS", "Shadcn UI", "Supabase"],
     link: "https://linkpad.africa",
-    tags: ["React", "Supabase", "Tailwind CSS"],
   },
   {
-    title: "carmaxx.co.za",
-    category: "MARKETPLACE",
+    title: "Carmaxx",
+    category: "Marketplace",
     description: "A digital car marketplace where people can browse, buy, and sell vehicles quickly and safely.",
+    tags: ["Next.js", "React", "Tailwind CSS", "Shadcn UI", "Supabase"],
     link: "https://carmaxx.co.za/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
   },
   {
-    title: "Fashion E-Commerce",
-    category: "ECOMMERCE",
+    title: "Hii Movie Store",
+    category: "eCommerce",
     description: "Full-featured online store with secure payments and real-time inventory management.",
-    link: "#",
-    tags: ["Next.js", "Stripe", "MongoDB"],
+    tags: ["Next.js", "Stripe", "React", "MongoDB"],
+    link: "https://himovie-hazel.vercel.app/",
   },
+  {
+    title: "Palbot",
+    category: "SaaS Platform",
+    description: "An AI Customer Service platform for all businesses",
+    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "OpenAI API", "Twilio", "Supabase"],
+    link: "https://palbot.co.za/",
+  },
+  {
+  title: "Drive Westown",
+  category: "Automotive Website",
+  description:
+    "Designed and developed a modern website for a car dealership, showcasing available vehicles and creating a streamlined experience for prospective buyers to explore inventory and connect with the dealership.",
+  tags: ["React", "TypeScript", "Tailwind CSS", "Responsive Web Design"],
+  link: "https://drivewestown.co.za/",
+},
 ];
-
 const experiences = [
   {
     period: "OCT 2026 — PRESENT",
