@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowLeft } from "lucide-react";
+import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import cleanbooksImage from "@/assets/IMG_0056.jpeg";
 import linkpadImage from "@/assets/IMG_0057.jpeg";
 import carmaxxImage from "@/assets/IMG_0058.png";
 import palbotImage from "@/assets/IMG_0059.png";
+import driveWestownImage from "@/assets/IMG_0058.png";
 
 const projects = [
   {
     title: "Cleanbooks",
     category: "SaaS Platform",
-    description: "A powerful accounting software that simplifies financial management for businesses of all sizes. Features include invoicing, expense tracking, financial reporting, and seamless integrations.",
+    description: "A powerful accounting software that simplifies financial management for businesses of all sizes.",
     image: cleanbooksImage,
-    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript"],
+    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "Supabase"],
     link: "https://cleanbooks.co.za/",
   },
   {
     title: "LinkPad",
     category: "Web Application",
-    description: "Create a clean, modern digital CV and portfolio, all packaged into one shareable link. Perfect for professionals looking to showcase their work and connect with opportunities.",
+    description: "Create a clean, modern digital CV and portfolio, all packaged into one shareable link.",
     image: linkpadImage,
     tags: ["React", "Tailwind CSS", "Shadcn UI", "Supabase"],
     link: "https://linkpad.africa",
@@ -27,129 +28,119 @@ const projects = [
   {
     title: "Carmaxx",
     category: "Marketplace",
-    description: "A digital car marketplace where people can browse, buy, and sell vehicles quickly and safely. Features verified sellers, quality listings, and a mobile-first shopping experience.",
+    description: "A digital car marketplace where people can browse, buy, and sell vehicles quickly and safely.",
     image: carmaxxImage,
-    tags: ["Next.js", "React", "Tailwind CSS", "Shadcn UI"],
+    tags: ["Next.js", "React", "Tailwind CSS", "Shadcn UI", "Supabase"],
     link: "https://carmaxx.co.za/",
   },
   {
-    title: "E-Commerce Fashion Store",
+    title: "Hii Movie Store",
     category: "eCommerce",
-    description: "Full-featured online store with secure payments, real-time inventory management, and a beautiful shopping experience for fashion enthusiasts.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
+    description: "Full-featured online store with secure payments and real-time inventory management.",
+    image: "https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=800&h=600&fit=crop",
     tags: ["Next.js", "Stripe", "React", "MongoDB"],
-    link: "#",
+    link: "https://himovie-hazel.vercel.app/",
   },
+  {
+    title: "Palbot",
+    category: "SaaS Platform",
+    description: "An AI Customer Service platform for all businesses",
+    image: palbotImage,
+    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "OpenAI API", "Twilio", "Supabase"],
+    link: "https://palbot.co.za/",
+  },
+  {
+  title: "Drive Westown",
+  category: "Automotive Website",
+  description:
+    "Designed and developed a modern website for a car dealership, showcasing available vehicles and creating a streamlined experience for prospective buyers to explore inventory and connect with the dealership.",
+  image: driveWestownImage,
+  tags: ["React", "TypeScript", "Tailwind CSS", "Responsive Web Design"],
+  link: "https://drivewestown.co.za/",
+},
 ];
 
-const Projects = () => {
+const ProjectsSection = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <motion.header
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        className="fixed top-0 left-0 right-0 z-50 glass border-b border-border/50"
-      >
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-            <ArrowLeft className="w-5 h-5" />
-            <span>Back Home</span>
-          </Link>
-          <Link to="/" className="text-xl font-display font-bold text-gradient-gold">
-            Nobantu
-          </Link>
-        </div>
-      </motion.header>
-
-      {/* Main Content */}
-      <main className="container mx-auto px-6 pt-32 pb-20">
+    <section id="projects" className="py-24 md:py-32 bg-secondary/30">
+      <div className="container mx-auto px-6">
+        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6"
         >
-          <span className="inline-block px-4 py-2 rounded-full border border-gold/30 text-gold text-sm mb-6">
-            Portfolio
-          </span>
-          <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-            All <span className="text-gradient-gold">Projects</span>
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A collection of my web development work, from SaaS platforms to marketplaces and e-commerce solutions.
-          </p>
+          <div>
+            <p className="text-primary font-body text-sm uppercase tracking-widest mb-4">
+              Portfolio
+            </p>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+              Recent <span className="text-gradient">Work</span>
+            </h2>
+          </div>
+          <Button variant="hero-outline" size="lg" asChild>
+            <Link to="/projects" className="group">
+              View All Projects
+              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </Link>
+          </Button>
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-card/50 rounded-2xl overflow-hidden border border-border/50 hover:border-gold/30 transition-all duration-500"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              className="group"
             >
-              {/* Image */}
-              <div className="relative aspect-video overflow-hidden">
+              <div className="relative overflow-hidden rounded-2xl mb-6">
                 <motion.img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full aspect-[4/3] object-cover"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.4 }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full bg-gold/20 text-gold text-sm border border-gold/30">
-                    {project.category}
-                  </span>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <Button variant="hero" size="sm" className="gap-2" asChild>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4" />
+                      View Project
+                    </a>
+                  </Button>
                 </div>
               </div>
-
-              {/* Content */}
-              <div className="p-6">
-                <h2 className="text-2xl font-display font-bold mb-3 group-hover:text-gold transition-colors">
-                  {project.title}
-                </h2>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 rounded-full bg-muted text-muted-foreground text-xs"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                {/* CTA */}
-                <Button variant="hero" className="w-full gap-2" asChild>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4" />
-                    View Live Project
-                  </a>
-                </Button>
+              <p className="text-primary text-sm font-body uppercase tracking-wide mb-2">
+                {project.category}
+              </p>
+              <h3 className="text-xl font-display font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                {project.title}
+              </h3>
+              <p className="text-muted-foreground font-body mb-4">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 text-xs font-body bg-secondary rounded-full text-muted-foreground"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </motion.article>
           ))}
         </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="border-t border-border/50 py-8">
-        <div className="container mx-auto px-6 text-center text-muted-foreground">
-          <p>© {new Date().getFullYear()} Nobantu. All rights reserved.</p>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default Projects;
+export default ProjectsSection;
