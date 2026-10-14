@@ -48,20 +48,23 @@ const projects = [
   link: "https://drivewestown.co.za/",
 },
 ];
+
 const experiences = [
   {
-    period: "OCT 2026 — PRESENT",
+    period: "Oct 2026 — Present",
     role: "Engineer",
     company: "Nintex",
-    description: "Promoted to Engineer. Contributing to the development, testing, and maintenance of workflow and automation products. Collaborating with engineers, QA, and product teams to deliver stable features across frontend, backend, and cloud integrations.",
-    technologies: ["TypeScript", "React", "C#", ".NET", "Azure", "SQL"],
+    description: "Promoted to Engineer, contributing to the development and continuous improvement of enterprise workflow and process automation products. Working across frontend and backend systems, including React-based microfrontends, .NET services, APIs, and cloud integrations. Contributing to feature development, production troubleshooting, technical debt reduction, and software quality through automated testing and continuous improvement. Exploring AI-driven engineering workflows while collaborating with engineering, QA, and product teams to deliver reliable, maintainable software.",
+    technologies: ["JavaScript", "TypeScript", "React", "Microfrontends", "C#", ".NET", "ASP.NET", "EF", "NodeJS", "Azure DevOps", "Azure CloudOps", "KQL", "SQL", "Github", "NUnit"],
+    current: true,
   },
   {
-    period: "2025 — OCT 2026",
+    period: "2025 — Oct 2026",
     role: "Associate Engineer",
     company: "Nintex",
-    description: "Joined Nintex as Associate Engineer, contributing to workflow and automation products across frontend, backend, and cloud integrations.",
-    technologies: ["TypeScript", "React", "C#", ".NET", "Azure", "SQL"],
+    description: "Contributed to the development, testing, maintenance, and support of enterprise workflow and process automation products. Worked across React-based microfrontends, backend services, APIs, databases, and cloud-based integrations. Collaborated with engineering, QA, and product teams to deliver features, resolve defects, investigate production issues using Azure Application Insights and KQL, and improve application reliability and maintainability. Gained hands-on experience with cloud operations, troubleshooting, automated testing, and enterprise software development practices.",
+    technologies: ["JavaScript", "TypeScript", "React", "Microfrontends", "C#", ".NET", "ASP.NET", "EF", "NodeJS", "Azure DevOps", "Azure CloudOps", "KQL", "SQL", "Github", "NUnit"],
+    current: false,
   },
   {
     period: "2023 — 2025",
