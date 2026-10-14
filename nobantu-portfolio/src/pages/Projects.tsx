@@ -3,40 +3,61 @@ import { ExternalLink, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import cleanbooksImage from "@/assets/cleanbooks.jpeg";
+import linkpadImage from "@/assets/IMG_0057.jpeg";
+import carmaxxImage from "@/assets/IMG_0058.png";
+import palbotImage from "@/assets/IMG_0059.png";
+import driveWestownImage from "@/assets/IMG_0058.png";
 
 const projects = [
   {
     title: "Cleanbooks",
     category: "SaaS Platform",
-    description: "A powerful accounting software that simplifies financial management for businesses of all sizes. Features include invoicing, expense tracking, financial reporting, and seamless integrations.",
+    description: "A powerful accounting software that simplifies financial management for businesses of all sizes.",
     image: cleanbooksImage,
-    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript"],
+    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "Supabase"],
     link: "https://cleanbooks.co.za/",
   },
   {
     title: "LinkPad",
     category: "Web Application",
-    description: "Create a clean, modern digital CV and portfolio, all packaged into one shareable link. Perfect for professionals looking to showcase their work and connect with opportunities.",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop",
+    description: "Create a clean, modern digital CV and portfolio, all packaged into one shareable link.",
+    image: linkpadImage,
     tags: ["React", "Tailwind CSS", "Shadcn UI", "Supabase"],
     link: "https://linkpad.africa",
   },
   {
     title: "Carmaxx",
     category: "Marketplace",
-    description: "A digital car marketplace where people can browse, buy, and sell vehicles quickly and safely. Features verified sellers, quality listings, and a mobile-first shopping experience.",
-    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop",
-    tags: ["Next.js", "React", "Tailwind CSS", "Shadcn UI"],
+    description: "A digital car marketplace where people can browse, buy, and sell vehicles quickly and safely.",
+    image: carmaxxImage,
+    tags: ["Next.js", "React", "Tailwind CSS", "Shadcn UI", "Supabase"],
     link: "https://carmaxx.co.za/",
   },
   {
-    title: "E-Commerce Fashion Store",
+    title: "Hii Movie Store",
     category: "eCommerce",
-    description: "Full-featured online store with secure payments, real-time inventory management, and a beautiful shopping experience for fashion enthusiasts.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
+    description: "Full-featured online store with secure payments and real-time inventory management.",
+    image: "https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=800&h=600&fit=crop",
     tags: ["Next.js", "Stripe", "React", "MongoDB"],
-    link: "#",
+    link: "https://himovie-hazel.vercel.app/",
   },
+  {
+    title: "Palbot",
+    category: "SaaS Platform",
+    description: "An AI Customer Service platform for all businesses",
+    image: palbotImage,
+    tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "OpenAI API", "Twilio", "Supabase"],
+    link: "https://palbot.co.za/",
+  },
+  {
+  title: "Drive Westown",
+  category: "Automotive Website",
+  description:
+    "Designed and developed a modern website for a car dealership, showcasing available vehicles and creating a streamlined experience for prospective buyers to explore inventory and connect with the dealership.",
+  image: driveWestownImage,
+  tags: ["React", "TypeScript", "Tailwind CSS", "Responsive Web Design"],
+  link: "https://drivewestown.co.za/",
+},
 ];
 
 const Projects = () => {
