@@ -6,6 +6,7 @@ import cleanbooksImage from "@/assets/IMG_0056.jpeg";
 import linkpadImage from "@/assets/IMG_0057.jpeg";
 import carmaxxImage from "@/assets/IMG_0058.png";
 import palbotImage from "@/assets/IMG_0059.png";
+import driveWestownImage from "@/assets/IMG_0058.png";
 
 const projects = [
   {
@@ -48,6 +49,15 @@ const projects = [
     tags: ["React", "Tailwind CSS", "Shadcn UI", "TypeScript", "OpenAI API", "Twilio", "Supabase"],
     link: "https://palbot.co.za/",
   },
+  {
+  title: "Drive Westown",
+  category: "Automotive Website",
+  description:
+    "Designed and developed a modern website for a car dealership, showcasing available vehicles and creating a streamlined experience for prospective buyers to explore inventory and connect with the dealership.",
+  image: driveWestownImage,
+  tags: ["React", "TypeScript", "Tailwind CSS", "Responsive Web Design"],
+  link: "https://drivewestown.co.za/",
+},
 ];
 
 const ProjectsSection = () => {
