@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import cleanbooksImage from "@/assets/cleanbooks.jpeg";
+import cleanbooksImage from "@/assets/cleanbooks.JPG";
 import linkpadImage from "@/assets/IMG_0057.jpeg";
 import carmaxxImage from "@/assets/IMG_0058.png";
 import palbotImage from "@/assets/IMG_0059.png";
