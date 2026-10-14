@@ -40,7 +40,7 @@ const projects = [
     link: "https://palbot.co.za/",
   },
   {
-  title: "Drive Westown",
+  title: "Westown Motors",
   category: "Automotive Website",
   description:
     "Designed and developed a modern website for a car dealership, showcasing available vehicles and creating a streamlined experience for prospective buyers to explore inventory and connect with the dealership.",
