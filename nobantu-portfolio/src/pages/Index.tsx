@@ -83,7 +83,7 @@ const sections = [
 
 const socialLinks = [
   { icon: Link2, href: "https://linkpad.africa/nobantu", label: "LinkPad" },
-  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Github, href: "https://github.com/bantuelle", label: "GitHub" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
 ];
 
